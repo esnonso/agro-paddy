@@ -1,0 +1,13 @@
+.container{
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.8rem 0;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: black;
+    margin: 0 0.3rem;
+}
