@@ -1,0 +1,67 @@
+{
+    "Pepper__bell___Bacterial_spot": {
+      "name": "Bacterial Spot (Pepper)",
+      "treatment": "Apply copper-based bactericides (e.g., copper hydroxide). Remove infected plants to prevent spread. Avoid overhead watering.",
+      "prevention": "Use disease-free seeds, rotate crops every 2-3 years, and space plants for airflow."
+    },
+    "Pepper__bell___healthy": {
+      "name": "Healthy Pepper",
+      "treatment": "No action needed. Maintain good practices to keep plants healthy.",
+      "prevention": "Regularly inspect leaves, avoid overwatering, and use balanced fertilizers."
+    },
+    "Potato___Early_blight": {
+      "name": "Early Blight (Potato)",
+      "treatment": "Spray with chlorothalonil or mancozeb fungicides every 7-10 days. Remove lower infected leaves.",
+      "prevention": "Rotate with non-solanaceous crops, mulch to reduce soil splash, and avoid nitrogen-heavy fertilizers."
+    },
+    "Potato___healthy": {
+      "name": "Healthy Potato",
+      "treatment": "No action needed. Monitor for pests/diseases.",
+      "prevention": "Practice crop rotation, ensure well-drained soil, and remove weeds."
+    },
+    "Tomato__Target_Spot": {
+      "name": "Target Spot (Tomato)",
+      "treatment": "Apply fungicides containing azoxystrobin or pyraclostrobin. Prune affected leaves.",
+      "prevention": "Use resistant varieties, avoid overcrowding, and sterilize tools between uses."
+    },
+    "Tomato__Tomato_mosaic_virus": {
+      "name": "Tomato Mosaic Virus",
+      "treatment": "No cure. Remove and destroy infected plants. Disinfect tools with 10% bleach solution.",
+      "prevention": "Use virus-free seeds, control aphids (vectors), and avoid smoking near plants (tobacco mosaic risk)."
+    },
+    "Tomato__Tomato_YellowLeaf__Curl_Virus": {
+      "name": "Tomato Yellow Leaf Curl Virus",
+      "treatment": "Remove infected plants immediately. Use insecticides like imidacloprid to control whiteflies (vectors).",
+      "prevention": "Plant resistant varieties (e.g., 'TYLCV-resistant'), use reflective mulch, and monitor whiteflies."
+    },
+    "Tomato_Bacterial_spot": {
+      "name": "Bacterial Spot (Tomato)",
+      "treatment": "Apply copper sprays + mancozeb. Destroy severely infected plants.",
+      "prevention": "Avoid working with wet plants, use drip irrigation, and rotate crops."
+    },
+    "Tomato_Early_blight": {
+      "name": "Early Blight (Tomato)",
+      "treatment": "Spray with copper or chlorothalonil. Remove lower leaves to improve airflow.",
+      "prevention": "Stake plants, mulch heavily, and rotate away from tomatoes/potatoes for 3 years."
+    },
+    "Tomato_Late_blight": {
+      "name": "Late Blight (Tomato)",
+      "treatment": "Apply fungicides (e.g., chlorothalonil, copper) at first sign. Destroy infected plants.",
+      "prevention": "Avoid overhead watering, space plants widely, and choose resistant varieties (e.g., 'Defiant')."
+    },
+    "Tomato_Leaf_Mold": {
+      "name": "Leaf Mold (Tomato)",
+      "treatment": "Use fungicides like chlorothalonil. Prune for better airflow.",
+      "prevention": "Reduce humidity in greenhouses, water at the base, and rotate crops."
+    },
+    "Tomato_Septoria_leaf_spot": {
+      "name": "Septoria Leaf Spot (Tomato)",
+      "treatment": "Apply copper or mancozeb fungicides. Remove infected leaves.",
+      "prevention": "Mulch to prevent soil splash, avoid overhead watering, and sterilize tools."
+    },
+    "Tomato_Spider_mites_Two_spotted_spider_mite": {
+      "name": "Spider Mites (Tomato)",
+      "treatment": "Spray with neem oil, insecticidal soap, or miticides (e.g., abamectin). Introduce predatory mites (Phytoseiulus persimilis).",
+      "prevention": "Increase humidity, avoid dusty conditions, and remove weeds that host mites."
+    }
+  }

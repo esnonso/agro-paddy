@@ -4,6 +4,8 @@
     display: flex;
     justify-content: flex-end;
     margin: 0.8rem 0;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 .nav-link{

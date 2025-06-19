@@ -18,9 +18,9 @@ export default function Navbar() {
           Chat
         </Link>
       )}
-      {pathname !== "/upload" && (
-        <Link href="/upload" className={styles["nav-link"]}>
-          Upload
+      {pathname !== "/diagnose" && (
+        <Link href="/diagnose" className={styles["nav-link"]}>
+          Diagnose
         </Link>
       )}
       {pathname !== "/dashboard" && (

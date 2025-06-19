@@ -15,7 +15,7 @@ export default function Home() {
       <Link href="/chat" style={{ margin: "0.4rem 0" }}>
         Chat with me, on your farming problems
       </Link>
-      <Link href="/upload" style={{ margin: "0.4rem 0" }}>
+      <Link href="/diagnose" style={{ margin: "0.4rem 0" }}>
         Upload leaf image to access crop health
       </Link>
       <Link href="/dashboard" style={{ margin: "0.4rem 0" }}>

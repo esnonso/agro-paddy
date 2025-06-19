@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Quicksand } from "next/font/google";
 import styles from "./chat.module.css";
 
@@ -13,6 +13,7 @@ export default function Chat() {
   const [messages, setMessages] = useState<{ role: string; text: string }[]>(
     []
   );
+
   const [input, setInput] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -22,6 +23,29 @@ export default function Chat() {
       sendMessage();
     }
   };
+
+  const initialLoadHandler = async () => {
+    try {
+      setLoading(true);
+      const res = await fetch("/api/onLoad");
+      const data = await res.json();
+      const humanData = await JSON.parse(data.message);
+      setMessages([{ role: "assistant", text: humanData.completion }]);
+    } catch {
+      setMessages([
+        {
+          role: "Assiastant",
+          text: "An error occured loading, please reload this page",
+        },
+      ]);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    initialLoadHandler();
+  }, []);
 
   const sendMessage = async () => {
     try {
@@ -39,9 +63,11 @@ export default function Chat() {
       });
 
       const data = await res.json();
-      const aiMsg = { role: "bot", text: data };
+      const humanData = await JSON.parse(data.body);
+      const aiMsg = { role: "bot", text: humanData.completion };
       setMessages((prev) => [...prev, aiMsg]);
     } catch (err) {
+      console.log(err);
       alert("An error occured");
     } finally {
       setLoading(false);
@@ -66,7 +92,7 @@ export default function Chat() {
                 msg.role === "user" ? "bg-green-200" : "bg-gray-200"
               }`}
             >
-              <strong>{msg.role === "user" ? "You" : "AgroSage"}:</strong>{" "}
+              <strong>{msg.role === "user" ? "You" : "Agropaddy"}:</strong>{" "}
               {msg.text}
             </p>
           </div>
