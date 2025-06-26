@@ -26,7 +26,7 @@ export async function POST(req: NextRequest) {
     const imageBuffer = Buffer.from(await file.arrayBuffer());
 
     const command = new InvokeEndpointCommand({
-      EndpointName: "crop-disease-detector", // Change to your deployed SageMaker endpoint
+      EndpointName: "disease-detector", // Change to your deployed SageMaker endpoint
       Body: imageBuffer,
       ContentType: "application/x-image",
       Accept: "application/json",
@@ -34,10 +34,9 @@ export async function POST(req: NextRequest) {
 
     const response = await sagemakerRuntime.send(command);
     const prediction = JSON.parse(Buffer.from(response.Body).toString());
-
     return NextResponse.json({ prediction });
   } catch (error) {
-    // console.log(error);
+    //console.log(error);
     return NextResponse.json({ error: "An error occured" });
   }
 }
