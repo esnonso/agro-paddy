@@ -76,7 +76,9 @@ export default function Chat() {
 
   return (
     <main className={styles.container}>
-      <h2 className={quicksand.className}>Chat Assistant</h2>
+      <h3 className={quicksand.className} style={{ marginBottom: "0.5rem" }}>
+        Chat Assistant
+      </h3>
       <div className={styles["chat-box"]}>
         {messages.map((msg, i) => (
           <div

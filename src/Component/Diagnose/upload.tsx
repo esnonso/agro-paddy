@@ -79,7 +79,9 @@ const ImageUploader: React.FC = () => {
   return (
     <main className={styles.container}>
       <div className={styles["image-uploader"]}>
-        <h2 className={quicksand.className}>Upload Image</h2>
+        <h3 className={quicksand.className} style={{ marginBottom: "0" }}>
+          Upload Plant Leaf Image
+        </h3>
 
         <small className={styles.small}>
           Upload leaf of plant similar to sample Image for proper detection
@@ -129,7 +131,7 @@ const ImageUploader: React.FC = () => {
         </button>
 
         {prediction.disease && (
-          <div>
+          <div style={{ padding: "0.5rem" }}>
             <p>
               <b>Disease spotted: </b> <br />
               {prediction.disease.replaceAll("_", " ")}
